@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="blue">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="S&B Solutions - Soluciones Empresariales Integradas y Automatizadas. ERP, CRM, Desarrollo Web y Servicios TI en Costa Rica.">
+  <meta name="keywords" content="ERP, CRM, desarrollo web, servicios TI, Costa Rica, soluciones empresariales, S&B Solutions">
+  <meta name="author" content="S&B Solutions">
+  <meta property="og:title" content="S&B Solutions - Soluciones Empresariales">
+  <meta property="og:description" content="ERP web completo, desarrollo de páginas web y servicios TI en Costa Rica.">
+  <meta property="og:type" content="website">
+  <title>S&B Solutions - Soluciones Empresariales Integradas</title>
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="assets/images/logo-full.png" alt="S&B Solutions" class="logo-full" id="logoFull">
+        <img src="assets/images/logo-icon.png" alt="S&B Solutions" class="logo-icon" id="logoIcon">
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="theme-switcher" title="Cambiar tema">
+          <button class="theme-btn active" data-theme="blue" aria-label="Tema Azul">
+            <span class="theme-dot blue-dot"></span>
+          </button>
+          <button class="theme-btn" data-theme="dark" aria-label="Tema Oscuro">
+            <span class="theme-dot dark-dot"></span>
+          </button>
+          <button class="theme-btn" data-theme="orange" aria-label="Tema Naranja">
+            <span class="theme-dot orange-dot"></span>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-up">
+          <span class="badge-pulse"></span>
+          Soluciones Empresariales Modernas
+        </div>
+        <h1 class="hero-title animate-fade-up delay-1">
+          Transforma tu empresa con<br>
+          <span class="gradient-text">tecnología de vanguardia</span>
+        </h1>
+        <p class="hero-description animate-fade-up delay-2">
+          S&B Solutions ofrece soluciones empresariales integradas y automatizadas.
+          Desde nuestro potente ERP hasta servicios de TI completos, impulsamos
+          el crecimiento de tu negocio en Costa Rica.
+        </p>
+        <div class="hero-cta animate-fade-up delay-3">
+          <a href="https://sybsolutions.netlify.app/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Acceder al ERP
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#productos" class="btn btn-ghost">
+            Ver Productos
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats animate-fade-up delay-4">
+          <div class="stat-item">
+            <span class="stat-value"><span class="count" data-target="50">0</span>+</span>
+            <span class="stat-label">Clientes activos</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-value">99.9<span>%</span></span>
+            <span class="stat-label">Disponibilidad ERP</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-value"><span class="count" data-target="5">0</span>+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual animate-fade-left delay-2">
+        <div class="device-mockup">
+          <div class="device-header">
+            <div class="device-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="device-url">sybsolutions.netlify.app</div>
+          </div>
+          <div class="device-screen">
+            <div class="screen-sidebar">
+              <div class="sidebar-logo-area">
+                <div class="sidebar-logo-circle"></div>
+              </div>
+              <div class="sidebar-menu">
+                <div class="sidebar-item active"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+              </div>
+            </div>
+            <div class="screen-main">
+              <div class="screen-topbar">
+                <div class="topbar-title"></div>
+                <div class="topbar-actions">
+                  <div class="topbar-btn"></div>
+                  <div class="topbar-btn accent"></div>
+                </div>
+              </div>
+              <div class="screen-cards">
+                <div class="screen-card">
+                  <div class="card-label"></div>
+                  <div class="card-value-bar"></div>
+                  <div class="card-trend up"></div>
+                </div>
+                <div class="screen-card">
+                  <div class="card-label"></div>
+                  <div class="card-value-bar medium"></div>
+                  <div class="card-trend up"></div>
+                </div>
+                <div class="screen-card">
+                  <div class="card-label"></div>
+                  <div class="card-value-bar short"></div>
+                  <div class="card-trend down"></div>
+                </div>
+              </div>
+              <div class="screen-chart">
+                <div class="chart-bar" style="--h:55%"></div>
+                <div class="chart-bar" style="--h:80%"></div>
+                <div class="chart-bar" style="--h:45%"></div>
+                <div class="chart-bar" style="--h:95%"></div>
+                <div class="chart-bar" style="--h:65%"></div>
+                <div class="chart-bar" style="--h:75%"></div>
+                <div class="chart-bar" style="--h:50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-badge badge-top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <div class="badge-text">
+            <strong>+28%</strong>
+            <span>Productividad</span>
+          </div>
+        </div>
+        <div class="float-badge badge-bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div class="badge-text">
+            <strong>24/7</strong>
+            <span>Disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTOS ===== -->
+  <section id="productos" class="section products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestros Productos</span>
+        <h2 class="section-title">Soluciones <span class="gradient-text">inteligentes</span> para tu negocio</h2>
+        <p class="section-desc">Herramientas empresariales diseñadas para optimizar, automatizar y escalar tus operaciones desde cualquier lugar.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- ERP -->
+        <article class="product-card featured reveal">
+          <div class="product-glow"></div>
+          <div class="product-top">
+            <span class="product-label available">Disponible ahora</span>
+            <div class="product-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="product-name">S&amp;B ERP</h3>
+          <p class="product-desc">Sistema de Planificación de Recursos Empresariales completo y basado en la web. Gestiona todos los aspectos de tu empresa desde una sola plataforma accesible desde cualquier dispositivo.</p>
+          <ul class="product-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Gestión de inventario y ventas</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Facturación electrónica integrada</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Reportes y análisis en tiempo real</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Gestión de empleados y nómina</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>100% web — accede desde cualquier lugar</li>
+          </ul>
+          <a href="https://sybsolutions.netlify.app/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+            Acceder al ERP
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <!-- CRM -->
+        <article class="product-card coming-soon reveal">
+          <div class="product-top">
+            <span class="product-label soon">Próximamente</span>
+            <div class="product-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="product-name">S&amp;B CRM</h3>
+          <p class="product-desc">Sistema de Gestión de Relaciones con Clientes que te permitirá mantener un seguimiento completo de tus clientes, oportunidades y el ciclo de ventas.</p>
+          <ul class="product-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Gestión de contactos y leads</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Pipeline de ventas visual</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automatización de marketing</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Integración total con S&amp;B ERP</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dashboard de rendimiento avanzado</li>
+          </ul>
+          <button class="btn btn-outline btn-full" disabled aria-disabled="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            En Desarrollo
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestros Servicios</span>
+        <h2 class="section-title">Todo lo que tu empresa <span class="gradient-text">necesita</span></h2>
+        <p class="section-desc">Una gama completa de servicios tecnológicos para mantener tu empresa a la vanguardia del mercado.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>Creamos páginas web y aplicaciones profesionales, modernas y optimizadas para tu negocio. Desde sitios informativos hasta plataformas empresariales complejas.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>
+              <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+          </div>
+          <h3>Servidores e Infraestructura</h3>
+          <p>Instalación, configuración y administración de servidores. Implementamos soluciones robustas para garantizar la continuidad y seguridad de tu negocio.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Redes y Conectividad</h3>
+          <p>Diseño, instalación y mantenimiento de redes empresariales. Garantizamos conectividad rápida, segura y confiable para toda tu organización.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>Reparación y Mejora de Equipos</h3>
+          <p>Diagnóstico, reparación y actualización de equipos de cómputo. Maximizamos el rendimiento y vida útil de tu hardware al mejor costo.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <h3>Capacitaciones Tecnológicas</h3>
+          <p>Formación personalizada para tu equipo en herramientas tecnológicas, sistemas empresariales y mejores prácticas digitales para optimizar su trabajo.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Soporte y Mantenimiento TI</h3>
+          <p>Soporte técnico continuo y mantenimiento preventivo para asegurar el óptimo funcionamiento de toda tu infraestructura tecnológica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content reveal">
+          <span class="section-badge">¿Por qué elegirnos?</span>
+          <h2 class="section-title">Tu éxito es <span class="gradient-text">nuestra misión</span></h2>
+          <p class="why-intro">Combinamos experiencia técnica universitaria con un profundo entendimiento de las necesidades empresariales para brindarte soluciones que realmente funcionan.</p>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Soluciones a la medida</strong>
+                <p>Adaptamos cada servicio a las necesidades específicas de tu empresa.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Soporte especializado</strong>
+                <p>Equipo técnico altamente capacitado disponible para asistirte.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Tecnología de vanguardia</strong>
+                <p>Usamos las últimas tecnologías para garantizar soluciones modernas.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Precios competitivos</strong>
+                <p>La mejor relación calidad-precio del mercado costarricense.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-metrics reveal">
+          <div class="metric-card">
+            <span class="metric-val">99.9%</span>
+            <span class="metric-label">Tiempo en línea del ERP</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:99.9%"></div></div>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">&lt;2h</span>
+            <span class="metric-label">Tiempo de respuesta de soporte</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:90%"></div></div>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">100%</span>
+            <span class="metric-label">Clientes satisfechos</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:100%"></div></div>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">50+</span>
+            <span class="metric-label">Proyectos completados</span>
+            <div class="metric-bar"><div class="metric-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section id="nosotros" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nuestro Equipo</span>
+        <h2 class="section-title">Los <span class="gradient-text">desarrolladores</span> detrás de S&amp;B</h2>
+        <p class="section-desc">Somos dos graduados de la Universidad de Costa Rica, apasionados por la tecnología y comprometidos con la transformación digital empresarial.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar" aria-label="Alejandro Solís R.">AS</div>
+            <div class="team-avatar-glow"></div>
+          </div>
+          <div class="team-body">
+            <h3>Alejandro Solís R.</h3>
+            <span class="team-role">Co-Fundador &amp; Desarrollador Full Stack</span>
+            <p>Graduado de la Universidad de Costa Rica. Especialista en desarrollo de software empresarial y soluciones ERP. Apasionado por crear tecnología que transforme la manera en que las empresas operan y crecen.</p>
+            <div class="team-tags">
+              <span class="tag">UCR</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">ERP</span>
+              <span class="tag">Cloud</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar" aria-label="Josué Barboza S.">JB</div>
+            <div class="team-avatar-glow"></div>
+          </div>
+          <div class="team-body">
+            <h3>Josué Barboza S.</h3>
+            <span class="team-role">Co-Fundador &amp; Desarrollador Full Stack</span>
+            <p>Graduado de la Universidad de Costa Rica. Experto en infraestructura tecnológica y desarrollo de sistemas. Comprometido con brindar soluciones de alta calidad a las empresas costarricenses.</p>
+            <div class="team-tags">
+              <span class="tag">UCR</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">DevOps</span>
+              <span class="tag">Redes</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="ucr-banner reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span>Orgullosamente graduados de la <strong>Universidad de Costa Rica</strong> &mdash; formando profesionales de excelencia 🇨🇷</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-glow"></div>
+        <h2>¿Listo para transformar tu empresa?</h2>
+        <p>Contáctanos hoy y descubre cómo S&amp;B Solutions puede llevar tu negocio al siguiente nivel con tecnología de punta.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/50687457877" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a href="mailto:sybsolutionscr@gmail.com" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Enviar un Correo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contacto</span>
+        <h2 class="section-title">Estamos aquí para <span class="gradient-text">ayudarte</span></h2>
+        <p class="section-desc">¿Tienes preguntas o necesitas más información? Escríbenos y te responderemos a la brevedad posible.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <a href="https://wa.me/50687457877" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-icon-wrap whatsapp-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="contact-text">
+              <strong>WhatsApp</strong>
+              <span>+506 8745-7877</span>
+            </div>
+          </a>
+
+          <a href="mailto:sybsolutionscr@gmail.com" class="contact-item">
+            <div class="contact-icon-wrap email-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-text">
+              <strong>Correo Electrónico</strong>
+              <span>sybsolutionscr@gmail.com</span>
+            </div>
+          </a>
+
+          <div class="contact-item no-link">
+            <div class="contact-icon-wrap location-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-text">
+              <strong>Ubicación</strong>
+              <span>Costa Rica 🇨🇷</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Nombre</label>
+              <input type="text" id="contactName" name="name" placeholder="Tu nombre completo" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Correo electrónico</label>
+              <input type="email" id="contactEmail" name="email" placeholder="tu@correo.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Asunto</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="¿En qué podemos ayudarte?">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" name="message" placeholder="Describe tu consulta o proyecto..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar Mensaje
+          </button>
+          <div class="form-note">Al enviar, serás redirigido a WhatsApp con tu mensaje.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo">
+            <img src="assets/images/logo-full.png" alt="S&B Solutions" class="logo-full" id="footerLogoFull">
+            <img src="assets/images/logo-icon.png" alt="S&B Solutions" class="logo-icon" id="footerLogoIcon">
+          </a>
+          <p>Soluciones Empresariales Integradas y Automatizadas. Tu socio tecnológico de confianza en Costa Rica.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/50687457877" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="mailto:sybsolutionscr@gmail.com" aria-label="Correo electrónico" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="https://sybsolutions.netlify.app/login" target="_blank" rel="noopener noreferrer">S&amp;B ERP</a></li>
+            <li><a href="#productos">S&amp;B CRM <span class="soon-tag">Próximamente</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Desarrollo Web</a></li>
+            <li><a href="#servicios">Servidores</a></li>
+            <li><a href="#servicios">Redes</a></li>
+            <li><a href="#servicios">Reparación de Equipos</a></li>
+            <li><a href="#servicios">Capacitaciones TI</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="https://wa.me/50687457877" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:sybsolutionscr@gmail.com">Correo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> S&amp;B Solutions. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ en Costa Rica 🇨🇷</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BOTONES FLOTANTES ===== -->
+  <div class="fab-group" aria-label="Contacto rápido">
+    <a href="https://wa.me/50687457877" target="_blank" rel="noopener noreferrer"
+       class="fab fab-wa" aria-label="Contactar por WhatsApp" title="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="mailto:sybsolutionscr@gmail.com"
+       class="fab fab-mail" aria-label="Enviar correo electrónico" title="Correo electrónico">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" title="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
