@@ -10,6 +10,7 @@
   <meta property="og:description" content="ERP web completo, desarrollo de páginas web y servicios TI en Costa Rica.">
   <meta property="og:type" content="website">
   <title>S&amp;B Solutions - Soluciones Empresariales Integradas</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
   <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +23,10 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#inicio" class="nav-logo">
-        <img src="assets/images/logo-full.png" alt="S&B Solutions" class="logo-full" id="logoFull">
-        <img src="assets/images/logo-icon.png" alt="S&B Solutions" class="logo-icon" id="logoIcon">
+        <img src="assets/images/logo-full.svg" alt="S&amp;B Solutions" class="logo-full" id="logoFull"
+             onerror="this.onerror=null;this.src='assets/images/logo-full.png'">
+        <img src="assets/images/logo-icon.svg" alt="S&amp;B Solutions" class="logo-icon" id="logoIcon"
+             onerror="this.onerror=null;this.src='assets/images/logo-icon.png'">
       </a>
 
       <div class="nav-menu" id="navMenu">
@@ -110,7 +113,7 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <div class="device-url">sybsolutions.netlify.app</div>
+            <div class="device-url">sybsolutionscr.netlify.app</div>
           </div>
           <div class="device-screen">
             <div class="screen-sidebar">
@@ -402,29 +405,33 @@
     <div class="container">
       <div class="section-header">
         <span class="section-badge">Nuestro Equipo</span>
-        <h2 class="section-title">Los <span class="gradient-text">desarrolladores</span> detrás de S&amp;B</h2>
-        <p class="section-desc">Somos dos graduados de la Universidad de Costa Rica, apasionados por la tecnología y comprometidos con la transformación digital empresarial.</p>
+        <h2 class="section-title">Ingenieros con <span class="gradient-text">visión empresarial</span></h2>
+        <p class="section-desc">Combinamos sólida experiencia en desarrollo de software, infraestructura tecnológica y sistemas empresariales para entregar soluciones que realmente transforman negocios.</p>
       </div>
 
       <div class="team-grid">
+        <!-- Alejandro -->
         <article class="team-card reveal">
           <div class="team-avatar-wrap">
             <div class="team-avatar" aria-label="Alejandro Solís R.">AS</div>
             <div class="team-avatar-glow"></div>
           </div>
           <div class="team-body">
-            <h3>Alejandro Solís R.</h3>
-            <span class="team-role">Co-Fundador &amp; Desarrollador Full Stack</span>
-            <p>Graduado de la Universidad de Costa Rica. Especialista en desarrollo de software empresarial y soluciones ERP. Apasionado por crear tecnología que transforme la manera en que las empresas operan y crecen.</p>
+            <h3>Luis Alejandro Solís R.</h3>
+            <span class="team-role">Co-Fundador · Software Engineer &amp; Systems Administrator</span>
+            <p>Ingeniero en Informática Empresarial con más de 2 años liderando infraestructura tecnológica, desarrollo backend y administración de sistemas ERP en entornos productivos. Especialista en .NET Core, C#, APIs REST, SQL Server y Azure DevOps. Ha diseñado e implementado soluciones que automatizan procesos críticos, integrando sistemas ERP con bases de datos de alto rendimiento y desplegando arquitecturas en la nube bajo metodologías ágiles (Scrum/Kanban).</p>
             <div class="team-tags">
-              <span class="tag">UCR</span>
-              <span class="tag">Full Stack</span>
+              <span class="tag">.NET Core / C#</span>
+              <span class="tag">APIs REST</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">CI/CD</span>
               <span class="tag">ERP</span>
-              <span class="tag">Cloud</span>
             </div>
           </div>
         </article>
 
+        <!-- Josué -->
         <article class="team-card reveal">
           <div class="team-avatar-wrap">
             <div class="team-avatar" aria-label="Josué Barboza S.">JB</div>
@@ -432,21 +439,46 @@
           </div>
           <div class="team-body">
             <h3>Josué Barboza S.</h3>
-            <span class="team-role">Co-Fundador &amp; Desarrollador Full Stack</span>
-            <p>Graduado de la Universidad de Costa Rica. Experto en infraestructura tecnológica y desarrollo de sistemas. Comprometido con brindar soluciones de alta calidad a las empresas costarricenses.</p>
+            <span class="team-role">Co-Fundador · Full Stack Developer &amp; DevOps Engineer</span>
+            <p>Ingeniero de software especializado en desarrollo web full stack e infraestructura de redes. Experto en diseño e implementación de sistemas escalables, gestión de servidores y redes empresariales (LAN/WAN, UniFi). Con dominio de Java, JavaScript, frameworks modernos y plataformas cloud, garantiza que cada solución sea segura, eficiente y preparada para crecer junto al negocio.</p>
             <div class="team-tags">
-              <span class="tag">UCR</span>
+              <span class="tag">Java / JavaScript</span>
               <span class="tag">Full Stack</span>
+              <span class="tag">Redes LAN/WAN</span>
+              <span class="tag">Windows Server</span>
+              <span class="tag">Linux</span>
               <span class="tag">DevOps</span>
-              <span class="tag">Redes</span>
             </div>
           </div>
         </article>
       </div>
 
-      <div class="ucr-banner reveal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-        <span>Orgullosamente graduados de la <strong>Universidad de Costa Rica</strong> &mdash; formando profesionales de excelencia 🇨🇷</span>
+      <!-- Skills highlight bar -->
+      <div class="team-skills-bar reveal">
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Desarrollo de Software
+        </div>
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          Servidores &amp; Infraestructura
+        </div>
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Redes Empresariales
+        </div>
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          SQL Server &amp; Oracle
+        </div>
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Seguridad &amp; Active Directory
+        </div>
+        <div class="skill-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Scrum / Kanban / CI&amp;CD
+        </div>
       </div>
     </div>
   </section>
@@ -549,8 +581,10 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#inicio" class="footer-logo">
-            <img src="assets/images/logo-full.png" alt="S&B Solutions" class="logo-full" id="footerLogoFull">
-            <img src="assets/images/logo-icon.png" alt="S&B Solutions" class="logo-icon" id="footerLogoIcon">
+            <img src="assets/images/logo-full.svg" alt="S&amp;B Solutions" class="logo-full" id="footerLogoFull"
+                 onerror="this.onerror=null;this.src='assets/images/logo-full.png'">
+            <img src="assets/images/logo-icon.svg" alt="S&amp;B Solutions" class="logo-icon" id="footerLogoIcon"
+                 onerror="this.onerror=null;this.src='assets/images/logo-icon.png'">
           </a>
           <p>Soluciones Empresariales Integradas y Automatizadas. Tu socio tecnológico de confianza en Costa Rica.</p>
           <div class="footer-socials">

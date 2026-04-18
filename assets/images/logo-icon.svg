@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="S&amp;B Solutions">
+  <defs>
+    <radialGradient id="sphereGrad" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="35%" stop-color="#0088ee"/>
+      <stop offset="70%" stop-color="#0055cc"/>
+      <stop offset="100%" stop-color="#002a8a"/>
+    </radialGradient>
+    <radialGradient id="shineGrad" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.30)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <linearGradient id="arcGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="100%" stop-color="rgba(180,220,255,0.6)"/>
+    </linearGradient>
+    <linearGradient id="arcGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.85)"/>
+      <stop offset="100%" stop-color="rgba(180,220,255,0.55)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sphere base -->
+  <circle cx="60" cy="60" r="56" fill="url(#sphereGrad)"/>
+  <!-- Shine overlay -->
+  <circle cx="60" cy="60" r="56" fill="url(#shineGrad)"/>
+
+  <!-- Background arc lines (faint) -->
+  <path d="M 20 72 Q 45 55 70 38" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 50 85 Q 75 68 100 50" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Main arc 1 — upper sweep (bold white) -->
+  <path d="M 28 52 C 38 28 72 22 82 42" fill="none" stroke="url(#arcGrad1)" stroke-width="5.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Main arc 2 — lower sweep (bold white) -->
+  <path d="M 38 78 C 48 98 82 92 92 68" fill="none" stroke="url(#arcGrad2)" stroke-width="5.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Connector dot — top-left -->
+  <circle cx="28" cy="52" r="7.5" fill="white" filter="url(#glow)"/>
+  <!-- Connector dot — top-right -->
+  <circle cx="82" cy="42" r="5.5" fill="rgba(255,255,255,0.75)"/>
+  <!-- Connector dot — bottom-left -->
+  <circle cx="38" cy="78" r="5.5" fill="rgba(255,255,255,0.75)"/>
+  <!-- Connector dot — bottom-right -->
+  <circle cx="92" cy="68" r="7.5" fill="white" filter="url(#glow)"/>
+</svg>

@@ -421,22 +421,33 @@ function initLogoFallback() {
   const logos = document.querySelectorAll('.nav-logo img, .footer-logo img, .logo-full, .logo-icon');
 
   logos.forEach(img => {
-    img.addEventListener('error', () => {
-      // Ocultar la imagen rota
-      img.style.display = 'none';
+    // Si ya cargó bien no hacemos nada
+    if (img.complete && img.naturalWidth > 0) return;
 
-      // Si es el logo completo, mostrar texto alternativo
-      if (img.classList.contains('logo-full') || img.id === 'logoFull' || img.id === 'footerLogoFull') {
-        const parent = img.closest('.nav-logo, .footer-logo');
-        if (parent && !parent.querySelector('.text-logo')) {
-          const text = document.createElement('span');
-          text.className = 'text-logo';
-          text.textContent = 'S&B Solutions';
-          parent.appendChild(text);
-        }
+    img.addEventListener('error', () => {
+      // Intentar con PNG si venía de SVG
+      if (img.src.endsWith('.svg')) {
+        const pngSrc = img.src.replace('.svg', '.png');
+        img.onerror = () => showTextFallback(img);
+        img.src = pngSrc;
+        return;
       }
+      showTextFallback(img);
     });
   });
+
+  function showTextFallback(img) {
+    img.style.display = 'none';
+    if (img.classList.contains('logo-full') || img.id === 'logoFull' || img.id === 'footerLogoFull') {
+      const parent = img.closest('.nav-logo, .footer-logo');
+      if (parent && !parent.querySelector('.text-logo')) {
+        const text = document.createElement('span');
+        text.className = 'text-logo';
+        text.textContent = 'S&B Solutions';
+        parent.appendChild(text);
+      }
+    }
+  }
 }
 
 /* ============================================================

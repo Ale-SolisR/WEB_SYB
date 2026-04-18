@@ -1181,21 +1181,35 @@ input, textarea, select { font-family: inherit; }
   color: var(--text-muted);
 }
 
-.ucr-banner {
+/* Skills bar in about section */
+.team-skills-bar {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
-  padding: 20px 32px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 50px;
+  font-size: 0.83rem;
+  font-weight: 500;
   color: var(--text-muted);
-  font-size: 0.9rem;
-  text-align: center;
+  transition: all var(--transition);
 }
-.ucr-banner svg { color: var(--primary); flex-shrink: 0; }
-.ucr-banner strong { color: var(--text); }
+.skill-pill svg { color: var(--primary); flex-shrink: 0; }
+.skill-pill:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
 
 /* ----------- CTA SECTION ----------- */
 .cta-section { background: var(--bg-2); }

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" role="img" aria-label="S&amp;B Solutions ERP">
+  <defs>
+    <radialGradient id="iconBg" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="35%" stop-color="#0088ee"/>
+      <stop offset="70%" stop-color="#0055cc"/>
+      <stop offset="100%" stop-color="#002a8a"/>
+    </radialGradient>
+    <radialGradient id="iconShine" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.28)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a3a6b"/>
+      <stop offset="100%" stop-color="#1a4a8a"/>
+    </linearGradient>
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── ICON (left side, scaled to fit 100x100 in 0,0 area) ── -->
+  <g transform="translate(0,0) scale(0.833)">
+    <circle cx="60" cy="60" r="54" fill="url(#iconBg)"/>
+    <circle cx="60" cy="60" r="54" fill="url(#iconShine)"/>
+    <!-- Background faint lines -->
+    <path d="M 20 72 Q 45 55 70 38" fill="none" stroke="rgba(255,255,255,0.17)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 50 85 Q 75 68 100 50" fill="none" stroke="rgba(255,255,255,0.17)" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arc 1 -->
+    <path d="M 28 52 C 38 28 72 22 82 42" fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="5.5" stroke-linecap="round" filter="url(#iconGlow)"/>
+    <!-- Arc 2 -->
+    <path d="M 38 78 C 48 98 82 92 92 68" fill="none" stroke="rgba(200,235,255,0.88)" stroke-width="5.5" stroke-linecap="round" filter="url(#iconGlow)"/>
+    <!-- Dots -->
+    <circle cx="28" cy="52" r="7.5" fill="white" filter="url(#iconGlow)"/>
+    <circle cx="82" cy="42" r="5.5" fill="rgba(255,255,255,0.75)"/>
+    <circle cx="38" cy="78" r="5.5" fill="rgba(255,255,255,0.75)"/>
+    <circle cx="92" cy="68" r="7.5" fill="white" filter="url(#iconGlow)"/>
+  </g>
+
+  <!-- ── TEXT (right of icon) ── -->
+  <!-- S&B in dark blue bold -->
+  <text x="100" y="62"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-size="42"
+    font-weight="900"
+    fill="url(#textGrad)"
+    letter-spacing="-1">S&amp;B</text>
+
+  <!-- solutions in blue medium -->
+  <text x="172" y="62"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-size="40"
+    font-weight="400"
+    fill="#0070f3"
+    letter-spacing="-0.5">solutions</text>
+
+  <!-- Divider line -->
+  <line x1="100" y1="70" x2="408" y2="70" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- ERP superscript / subtitle -->
+  <text x="353" y="58"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-size="16"
+    font-weight="600"
+    fill="#94a3b8"
+    letter-spacing="1">ERP</text>
+
+  <!-- Tagline -->
+  <text x="100" y="86"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-size="11"
+    font-weight="400"
+    fill="#94a3b8"
+    letter-spacing="0.3">Soluciones Empresariales Integradas y Automatizadas</text>
+</svg>
