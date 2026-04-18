@@ -242,22 +242,35 @@ input, textarea, select { font-family: inherit; }
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+/* Ícono circular del logo */
+.nav-brand-icon {
+  height: 42px;
+  width: 42px;
+  object-fit: contain;
+  border-radius: 50%;
   flex-shrink: 0;
 }
 
-.nav-logo .logo-full {
-  height: 44px;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(1.1);
+/* Texto S&B Solutions junto al ícono */
+.nav-brand-text {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color var(--transition);
 }
-
-.nav-logo .logo-icon {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-  display: none;
+.nav-brand-sub {
+  font-weight: 500;
+  color: var(--primary);
 }
+.nav-logo:hover .nav-brand-text { color: var(--primary-light); }
 
 /* Fallback text logo */
 .text-logo {
@@ -267,6 +280,14 @@ input, textarea, select { font-family: inherit; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Footer logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 .nav-menu {
@@ -1384,13 +1405,7 @@ input, textarea, select { font-family: inherit; }
   padding-bottom: 56px;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-.footer-logo .logo-full { height: 40px; width: auto; object-fit: contain; filter: brightness(1.1); }
-.footer-logo .logo-icon { height: 36px; width: auto; display: none; }
+.footer-logo .nav-brand-icon { height: 38px; width: 38px; }
 
 .footer-brand p {
   font-size: 0.88rem;
@@ -1673,7 +1688,8 @@ input, textarea, select { font-family: inherit; }
   .stat-sep { height: 30px; }
   .device-mockup { transform: scale(0.9); transform-origin: top center; }
   .float-badge { display: none; }
-  .nav-logo .logo-full { height: 36px; }
+  .nav-brand-icon { height: 36px !important; width: 36px !important; }
+  .nav-brand-text { font-size: 1.15rem; }
   .contact-form { padding: 24px 20px; }
   .ucr-banner { flex-direction: column; text-align: center; }
 }
