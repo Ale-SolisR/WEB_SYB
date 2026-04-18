@@ -47,7 +47,7 @@ function initTheme() {
       b.setAttribute('aria-pressed', b.dataset.theme === theme);
     });
     // Re-dibujar canvas con nuevo color
-    if (window._heroCtx) drawCanvas(window._heroCtx, theme);
+    if (window._heroCtx && window.drawCanvas) window.drawCanvas(window._heroCtx, theme);
   }
 }
 
